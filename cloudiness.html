@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <title>Bootstrap Visualization Dashboard</title>
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  
+  <body>
+
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a href="index.html" class="btn btn-primary btn-lg active role=button">Lattitude</a>
+      </div>
+
+      <div class="navbar-nav ml auto">
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown">Plots</a>
+          <div class="dropdown-menu">
+            <a href="temperature.html" class="dropdown-item">Max Temperature</a>
+            <a href="humidity.html" class="dropdown-item">Humidty</a>
+            <a href="cloudiness.html" class="dropdown-item">Cloudiness</a>
+            <a href="wind.html" class="dropdown-item">Wind Speed</a>
+          </div>
+        </div>
+
+        <a href="comparisons.html" class="nav-item nav-link text-secondary">Comparisons</a>
+        <a href="data.html" class="nav-item nav-link text-secondary">Data</a>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+      
+      <div class="container px-0">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card text-primary bg-white mb-4">
+              <div class="card-body">
+                <h3 class="card-title">Cloudiness</h3>
+                <img src="Fig3.png" alt="Fig1" class="image-fluid" style="width: 400px; height: 400px">
+                <p class="card-text text-muted d-flex"> 
+                  Cloudiness appears to be uniform over the Earth and does not vary as one
+                  approaches the equator (0 Deg. Latitude).
+                  </thead>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card text-primary bg-white mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Visualizations</h5>
+                <div class="container">
+                    <a href="temperature.html"><img src="Fig1.png" alt="Fig1" style="width: 100px;"></a>
+                    <a href="humidity.html"><img src="Fig2.png" alt="Fig1" style="width: 100px;"></a>
+                    <a href="cloudiness.html"><img src="Fig3.png" alt="Fig1" style="width: 100px;" class="border border-primary"></a>
+                    <a href="wind.html"><img src="Fig4.png" alt="Fig1" style="width: 100px;"></a>
+                </div>
+              </div>
+            </div>  
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- The bootstrap documentation says that many components require the following lines. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
